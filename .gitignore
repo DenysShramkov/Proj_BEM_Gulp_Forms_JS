@@ -1,0 +1,3 @@
+*.json
+*.psd
+src/node_modules/
