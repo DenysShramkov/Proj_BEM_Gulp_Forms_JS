@@ -1,0 +1,38 @@
+.review-item
+	display: flex
+	align-items: flex-start
+	margin-bottom: 84px
+	position: relative
+	&__img
+		margin-right: 60px
+		width: 169px
+	&__descr
+		width: 660px
+	&__review
+		font-size: 16px
+		font-weight: 300
+		color: #000000
+		line-height: 1.2
+	&__name
+		font-size: 18px
+		font-weight: 700
+		color: #000000
+		line-height: 1.2
+	&__achievements
+		font-size: 14px
+		font-weight: 300
+		color: #6d6b6b
+		line-height: 1.2
+	&:nth-child(n)
+		&::after
+			content: ''
+			position: absolute
+			width: 940px
+			height: 1px
+			background-color: #f6f6f6
+			bottom: -34px
+	&:last-child
+		margin-bottom: 0
+		&::after
+			display: none
+		

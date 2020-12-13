@@ -1,0 +1,94 @@
+.catalog-item
+	width: 300px
+	padding: 20px 0
+	min-height: 440px
+	border: 2px solid #e8e8e8;
+	overflow: hidden
+	&__img
+		margin: 0 auto
+		max-width: 100%
+		height: 200px
+		margin-bottom: 20px
+	&__subtitle
+		margin-bottom: 17px
+		font-size: 16px
+		line-height: 1.2
+		font-weight: 700
+		color: #0d0d0d
+	&__descr
+		margin-bottom: 17px
+		font-size: 14px
+		line-height: 1.2
+		font-weight: 300
+		color: #0d0d0d
+	&__link, &__link_back
+		font-size: 14px
+		line-height: 1.2
+		font-weight: 500
+		color: #c70101
+		text-transform: uppercase
+	hr
+		margin: 20px 0px
+		border: 1px solid #e8e8e8
+	&__footer
+		width: 100%
+		display: flex
+		justify-content: space-between
+		padding: 0 20px
+	&__prices
+		font-size: 20px
+		line-height: 1.2
+		font-weight: 700
+		color: #050505
+		text-align: left
+		position: relative
+		top: -9px
+		spun
+			font-size: 14px
+			font-weight: 300
+			color: #555555
+			text-decoration: line-through
+	&__wrapper
+		width: 200%
+		display: flex
+		transition: 0.5s all
+		&_active
+			transform: translateX(-50%)
+	&__short
+		text-align: center
+		width: 50%
+	&__more
+		position: relative
+		width: 50%
+		padding: 0 20px
+	&__list
+		text-align: left
+		list-style: none
+		margin: 0
+		padding-left: 20px
+	&__list-element
+		position: relative
+		font-size: 14px
+		line-height: 1.2
+		font-weight: 300
+		color: #555555
+		margin-bottom: 19px
+		&::before
+			content: ''
+			position: absolute
+			left: -19px
+			top: 4px
+			width: 5px
+			height: 5px
+			background-color: #c70101
+	&__link_back
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 0
+.catalog-item_margin
+	margin-bottom: 20px
+	&:nth-child(3n+2)
+		margin-left: 20px
+		margin-right: 20px
+		
