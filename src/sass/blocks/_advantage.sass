@@ -1,20 +1,24 @@
 .advantage
-    display: flex
-    width: 250px
-    flex-direction: column
-    align-items: center
-    margin-top: 65px
-    &__title
-        font-size: 18px
-        font-weight: 700
-        color: #0d0d0d
-        margin-top: 38px
-    &__descr
-        font-size: 14px
-        line-height: 1.2
-        font-weight: 300
-        color: #0d0d0d
-        margin-top: 25px
-        text-align: center
-    &__link
-        color: $red_color
+	display: flex
+	width: 250px
+	flex-direction: column
+	align-items: center
+	margin-top: 65px
+	&__title
+		font-size: 18px
+		font-weight: 700
+		color: #0d0d0d
+		margin-top: 38px
+	&__descr
+		font-size: 14px
+		line-height: 1.2
+		font-weight: 300
+		color: #0d0d0d
+		margin-top: 25px
+		text-align: center
+	&__link
+		color: $red_color
+	&__img_animated
+		animation: heartbeat 1.5s ease infinite
+		&:hover
+			animation-play-state: paused
